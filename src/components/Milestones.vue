@@ -4,97 +4,194 @@ export default {};
 
 <template>
   <div class="milestone-container">
-    <h2 class="secondary-m normal f45 center mobile-text">
-      <span class="heading-dot">.</span>Milestones <span class="mobile-line milestone"></span>
-    </h2>
+    <div class="section-header">
+      <h2 class="secondary-m normal f45 center mobile-text">
+        <span class="heading-dot">.</span>Journey <span class="mobile-line milestone"></span>
+      </h2>
+      <p class="primary-l accent f20 center mobile-text section-subtitle">
+        From software development to entrepreneurship
+      </p>
+    </div>
 
-    <div class="timeline">
-      <div class="container left">
-        <h2 class="secondary-l accent f20 timestamp">Until today</h2>
-        <div class="content">
-          <h3 class="secondary-m normal f30 mobile-heading"><span class="heading-dot">.</span>Eat Code Sleep Repeat</h3>
-          <p class="primary-l accent f20">
-            I like reading about software engineering and want to understand how things work under the hood. I try to do
-            that all day long.
+    <div class="modern-timeline">
+      <!-- Current Phase -->
+      <div class="timeline-item current">
+        <div class="timeline-marker current-marker">
+          <div class="marker-inner"></div>
+        </div>
+        <div class="timeline-content current-content">
+          <div class="content-header">
+            <span class="timeline-date">Present</span>
+            <span class="timeline-category">Current Focus</span>
+          </div>
+          <h3 class="timeline-title">Finding and solving real world problems</h3>
+          <p class="timeline-description">
+            Trying to find and solve real world problems.
           </p>
+          <div class="timeline-tags">
+            <span class="tag">Entrepreneurship</span>
+            <span class="tag">Software Development</span>
+            <span class="tag">Problem Solving</span>
+          </div>
         </div>
       </div>
 
-      <div class="container right">
-        <h2 class="secondary-l accent f20 timestamp">August, 2022</h2>
-        <div class="content project">
-          <h3 class="secondary-m normal f30 mobile-heading"><span class="heading-dot">.</span>New Position</h3>
-          <p class="primary-l accent f20">
-            Started a new job at Werkdigital as a software developer. Specialized in working with .Net, Angular and
-            React Native.
+      <!-- New Professional Role -->
+      <div class="timeline-item current">
+        <div class="timeline-marker">
+          <div class="marker-inner"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="content-header">
+            <span class="timeline-date">March 2025</span>
+            <span class="timeline-category">Professional</span>
+          </div>
+          <h3 class="timeline-title">Lead Software Developer at Werkdigital</h3>
+          <p class="timeline-description">
+            Starting a new role as Lead Software Developer at Werkdigital. 
+            I'm excited to continue my journey in software development and to take on more responsibilities.
           </p>
+          <div class="timeline-tags">
+            <span class="tag">Lead Software Developer</span>
+            <span class="tag">Software Development</span>
+          </div>
         </div>
       </div>
 
-      <div class="container left">
-        <h2 class="secondary-l accent f20 timestamp">January, 2022</h2>
-        <div class="content project">
-          <h3 class="secondary-m normal f30 mobile-heading"><span class="heading-dot">.</span>Customer Map</h3>
-          <p class="primary-l accent f20">
-            An application that facilitates the planning of field service trips. Allows customer data to be adjusted or
-            updated and gives the user the option of filtering customers according to certain criteria. This makes it
-            easier to plan the next field service trip.
+      <!-- New Professional Role -->
+      <div class="timeline-item current">
+        <div class="timeline-marker current-marker">
+          <div class="marker-inner"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="content-header">
+            <span class="timeline-date">March 2025</span>
+            <span class="timeline-category">Professional</span>
+          </div>
+          <h3 class="timeline-title">AI Innovation Specialist at Werkdigital</h3>
+          <p class="timeline-description">
+            Starting a new role as AI Innovation Specialist at Werkdigital. 
+            I'm excited to continue my journey in AI innovation for internal and external use.
           </p>
+          <div class="timeline-tags">
+            <span class="tag">AI Innovation Specialist</span>
+            <span class="tag">Software Development</span>
+          </div>
         </div>
       </div>
 
-      <div class="container right">
-        <h2 class="secondary-l accent f20 timestamp">January, 2022</h2>
-        <div class="content">
-          <h3 class="secondary-m normal f30 mobile-heading"><span class="heading-dot">.</span>Angular Training</h3>
-          <p class="primary-l accent f20">
-            To get better with Angular, I started an online training and got myself in some Angular projects to learn
-            more.
+      <!-- Professional Role -->
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <div class="marker-inner"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="content-header">
+            <span class="timeline-date">Aug 2022</span>
+            <span class="timeline-category">Professional</span>
+          </div>
+          <h3 class="timeline-title">Software Developer at Werkdigital</h3>
+          <p class="timeline-description">
+            Specialized in .NET, Angular, and React Native development. Working on enterprise-level applications 
+            and contributing to scalable software solutions.
           </p>
+          <div class="timeline-tags">
+            <span class="tag">.NET</span>
+            <span class="tag">Angular</span>
+            <span class="tag">React Native</span>
+          </div>
         </div>
       </div>
 
-      <div class="container left">
-        <h2 class="secondary-l accent f20 timestamp">January, 2022</h2>
-        <div class="content">
-          <h3 class="secondary-m normal f30 mobile-heading"><span class="heading-dot">.</span>Advanced Training</h3>
-          <p class="primary-l accent f20">
-            Finished my advanced training with a grade of 1,2 and acquired a diploma with the title "Certified
-            Web-Developer" (Geprüfter Web-Entwickler)
+      <!-- Key Projects -->
+      <div class="timeline-item project-item">
+        <div class="timeline-marker project-marker">
+          <div class="marker-inner"></div>
+        </div>
+        <div class="timeline-content project-content">
+          <div class="content-header">
+            <span class="timeline-date">Jan 2022</span>
+            <span class="timeline-category">Project</span>
+          </div>
+          <h3 class="timeline-title">Customer Map Application</h3>
+          <p class="timeline-description">
+            Developed a comprehensive field service planning application with advanced filtering capabilities 
+            and customer data management features. This project was developed for a customer of Netzhero.
           </p>
+          <div class="timeline-tags">
+            <span class="tag">Web Application</span>
+            <span class="tag">Data Management</span>
+            <span class="tag">User Experience</span>
+          </div>
         </div>
       </div>
 
-      <div class="container right">
-        <h2 class="secondary-l accent f20 timestamp">December, 2021</h2>
-        <div class="content project">
-          <h3 class="secondary-m normal f30 mobile-heading"><span class="heading-dot">.</span>Produktfinder</h3>
-          <p class="primary-l accent f20">
-            A product calculator to help customers find the right product for their needs. With a white label
-            functionality to make it usable for wholesalers/customers and embed it on their websites.
+      <!-- Education & Certification -->
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <div class="marker-inner"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="content-header">
+            <span class="timeline-date">Jan 2022</span>
+            <span class="timeline-category">Education</span>
+          </div>
+          <h3 class="timeline-title">Certified Web Developer</h3>
+          <p class="timeline-description">
+            Completed advanced training with distinction (Grade: 1.2) and earned the professional qualification 
+            "Geprüfter Web-Entwickler" (Certified Web Developer).
           </p>
+          <div class="timeline-tags">
+            <span class="tag">Certification</span>
+            <span class="tag">Web Development</span>
+            <span class="tag">Professional Qualification</span>
+          </div>
         </div>
       </div>
 
-      <div class="container left">
-        <h2 class="secondary-l accent f20 timestamp">February, 2021</h2>
-        <div class="content">
-          <h3 class="secondary-m normal f30 mobile-heading"><span class="heading-dot">.</span>Advanced Training</h3>
-          <p class="primary-l accent f20">
-            Started an advanced training to get a professional qualification "Certified Web-Developer" (Geprüfter
-            Web-Entwickler).
+      <!-- Business Venture -->
+      <div class="timeline-item project-item">
+        <div class="timeline-marker project-marker">
+          <div class="marker-inner"></div>
+        </div>
+        <div class="timeline-content project-content">
+          <div class="content-header">
+            <span class="timeline-date">Dec 2021</span>
+            <span class="timeline-category">Business</span>
+          </div>
+          <h3 class="timeline-title">Produktfinder Platform</h3>
+          <p class="timeline-description">
+            Created an innovative product calculator with white-label functionality, enabling wholesalers 
+            to embed customized solutions on their websites. This project was developed for a customer of Netzhero.
           </p>
+          <div class="timeline-tags">
+            <span class="tag">SaaS Platform</span>
+            <span class="tag">White Label</span>
+            <span class="tag">B2B Solution</span>
+          </div>
         </div>
       </div>
 
-      <div class="container right">
-        <h2 class="secondary-l accent f20 timestamp">January, 2019</h2>
-        <div class="content">
-          <h3 class="secondary-m normal f30 mobile-heading"><span class="heading-dot">.</span>Founded Netzhero</h3>
-          <p class="primary-l accent f20">
-            Founded Netzhero as a side hustle to pursue my passion for software development
+      <!-- Entrepreneurship Start -->
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <div class="marker-inner"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="content-header">
+            <span class="timeline-date">Jan 2019</span>
+            <span class="timeline-category">Entrepreneurship</span>
+          </div>
+          <h3 class="timeline-title">Founded Netzhero</h3>
+          <p class="timeline-description">
+            Launched Netzhero as a side venture to pursue my passion for software development and 
+            explore entrepreneurial opportunities in the tech space.
           </p>
-          <a href="https://netzhero.de" target="_blank" class="project-link">Netzhero</a>
+          <div class="timeline-tags">
+            <span class="tag">Founder</span>
+            <span class="tag">Startup</span>
+            <span class="tag">Innovation</span>
+          </div>
         </div>
       </div>
     </div>
@@ -106,125 +203,298 @@ export default {};
   margin: 300px 0;
 }
 
-a.project-link {
-  text-decoration: none;
-  color: #ffb800;
-  transition: all 0.4s;
+.section-header {
+  margin-bottom: 80px;
 }
 
-a:hover.project-link {
-  transition: all 0.4s;
-  text-shadow: 2px 2px 8px #ffb800;
+.section-subtitle {
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.timestamp {
-  margin-left: 20px;
-}
-
-/* The actual timeline (the vertical ruler) */
-.project {
-  border: 0.5px solid #ffb800;
-}
-
-.timeline {
+/* Modern Timeline Styles */
+.modern-timeline {
   position: relative;
-  max-width: 1200px;
-  margin: 80px auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
+.modern-timeline::before {
   content: '';
   position: absolute;
-  width: 1px;
-  background-color: #616a77;
+  left: 50px;
   top: 0;
   bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+  width: 2px;
+  background: linear-gradient(to bottom, #ffb800, #ffb80040);
+  border-radius: 1px;
 }
 
-/* Container around content */
-.container {
-  padding: 10px 40px;
+.timeline-item {
   position: relative;
-  background-color: inherit;
-  width: 50%;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: flex-start;
 }
 
-/* The circles on the timeline */
-.container::after {
-  content: '';
+.timeline-item.current {
+  margin-bottom: 80px;
+}
+
+.timeline-marker {
   position: absolute;
-  width: 21px;
-  height: 21px;
-  right: -8px;
-  background-color: #1d303b;
-  border: 1px solid #616a77;
-  top: 15px;
+  left: 30px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  z-index: 1;
+  background: #1d303b;
+  border: 3px solid #616a77;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all 0.3s ease;
 }
 
-/* Place the container to the left */
-.left {
-  left: 0;
+.timeline-marker:hover {
+  transform: scale(1.1);
+  border-color: #ffb800;
 }
 
-/* Place the container to the right */
-.right {
-  left: 50%;
+.current-marker {
+  border-color: #ffb800;
+  background: #ffb80020;
+  box-shadow: 0 0 20px #ffb80040;
 }
 
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -13px;
+.project-marker {
+  border-color: #ffb800;
+  background: #ffb80020;
 }
 
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: #283446;
+.marker-inner {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ffb800;
+  transition: all 0.3s ease;
+}
+
+.current-marker .marker-inner {
+  background: #ffb800;
+  box-shadow: 0 0 10px #ffb800;
+}
+
+.project-marker .marker-inner {
+  background: #ffb800;
+}
+
+.timeline-content {
+  margin-left: 100px;
+  background: #283446;
+  border-radius: 16px;
+  padding: 30px;
+  border: 1px solid #3a4a5c;
+  transition: all 0.3s ease;
   position: relative;
-  border-radius: 12px;
+  flex: 1;
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+.timeline-content:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-color: #ffb80040;
+}
+
+.current-content {
+  border-color: #ffb800;
+  background: linear-gradient(135deg, #283446, #2a3a4a);
+  box-shadow: 0 0 30px #ffb80020;
+}
+
+.project-content {
+  border-color: #ffb80040;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.timeline-date {
+  color: #ffb800;
+  font-family: secondary-m;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.timeline-category {
+  background: #ffb80020;
+  color: #ffb800;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-family: secondary-m;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.timeline-title {
+  color: #ffffff;
+  font-family: secondary-m;
+  font-size: 24px;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.timeline-description {
+  color: #c6c8cd;
+  font-family: primary-l;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.tag {
+  background: #1d303b;
+  color: #c6c8cd;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-family: secondary-m;
+  border: 1px solid #3a4a5c;
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background: #ffb80020;
+  color: #ffb800;
+  border-color: #ffb80040;
+}
+
+.project-link {
+  color: #ffb800;
+  text-decoration: none;
+  font-family: secondary-m;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.project-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffb800;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
   .milestone-container {
-    margin: 100px 0 150px 0;
+    margin: 150px 0;
   }
 
-  .timeline {
-    margin: 30px auto;
+  .section-header {
+    margin-bottom: 60px;
   }
 
-  .mobile-heading {
-    line-height: 130%;
-    margin-bottom: 10px;
+  .modern-timeline {
+    padding: 0 20px;
+    max-width: 100%;
   }
 
-  /* Place the timelime to the left */
-  .timeline::after {
-    left: 31px;
+  .modern-timeline::before {
+    left: 30px;
   }
 
-  /* Full-width containers */
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+  .timeline-marker {
+    left: 10px;
+    width: 40px;
+    height: 40px;
   }
 
-  /* Make sure all circles are at the same spot */
-  .left::after,
-  .right::after {
-    left: 18px;
+  .timeline-content {
+    margin-left: 80px;
+    padding: 20px;
+    margin-right: 0;
   }
 
-  /* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
+  .timeline-title {
+    font-size: 20px;
+  }
+
+  .timeline-description {
+    font-size: 14px;
+  }
+
+  .content-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .timeline-tags {
+    gap: 6px;
+  }
+
+  .tag {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .modern-timeline {
+    padding: 0 15px;
+  }
+
+  /* Hide timeline line and markers on very small screens */
+  .modern-timeline::before {
+    display: none;
+  }
+
+  .timeline-marker {
+    display: none;
+  }
+
+  .timeline-content {
+    margin-left: 0;
+    padding: 20px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    border-left: 3px solid #ffb800;
+  }
+
+  .timeline-title {
+    font-size: 18px;
+  }
+
+  .timeline-description {
+    font-size: 13px;
+  }
+
+  .timeline-item {
+    margin-bottom: 40px;
   }
 }
 </style>

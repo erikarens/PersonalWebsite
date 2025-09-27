@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { RouterView, RouterLink } from "vue-router";
 import Navigation from "@/components/Navigation.vue";
+import { RouterView } from "vue-router";
 import Sidebar from "./components/sidebar.vue";
 </script>
 

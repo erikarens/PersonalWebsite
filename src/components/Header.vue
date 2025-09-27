@@ -6,38 +6,48 @@ export default {};
   <div class="content-container header">
     <p class="lh-n primary primary-r f15">Hi, my name is</p>
     <h1 class="lh-n normal primary-b f60">Erik Arens</h1>
-    <h2 class="lh-n accent primary-b f60">I'm a Software Developer.</h2>
+    <h2 class="lh-n accent primary-b f60">Software Developer & Founder</h2>
     <p class="primary-l accent f20">
-      I’m a Software Developer with a focus on .NET, Angular, and React Native. I enjoy working on challenging projects
-      and using my skills to develop practical solutions. Most of my experience comes from private projects, where I’ve
-      focused on building business applications.
+      I build software solutions and run my own businesses. Specialized in .NET, Angular, and React Native. 
+      Passionate about solving real-world problems through technology and entrepreneurship.
     </p>
     <div class="cta-container">
-      <a href="/#about" class="secondary-l cta f20 cta-spacing-rigth">Get to know me</a>
       <a href="https://github.com/erikarens" class="secondary-l accent f20 cta-spacing profile-cta"
-        target="_blank">Github❯</a>
+        target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/erik-arens-a48865195/" class="secondary-l accent f20 cta-spacing profile-cta"
-        target="_blank">LinkedIn❯</a>
+        target="_blank">LinkedIn</a>
+      <a href="https://x.com/erikarens" class="secondary-l accent f20 cta-spacing profile-cta"
+        target="_blank">X / Twitter</a>
     </div>
   </div>
 </template>
 
 <style>
 .cta-container {
-  margin-top: 20px;
-}
-
-.cta-spacing-rigth {
-  margin-right: 30px;
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .cta-spacing {
-  margin: 0 30px;
+  margin: 0;
+}
+
+.profile-cta {
+  color: #c6c8cd;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid transparent;
 }
 
 .profile-cta:hover {
   color: #ffb800;
-  transition: all ease 0.5s;
+  border-color: #ffb80040;
+  background-color: #ffb80010;
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 600px) {
@@ -46,17 +56,12 @@ export default {};
   }
 
   .cta-container {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .cta-spacing-rigth {
-    margin: 30px 20%;
+    justify-content: center;
+    gap: 15px;
   }
 
   .profile-cta {
-    margin: 20px auto;
+    margin: 0;
     text-align: center;
   }
 }

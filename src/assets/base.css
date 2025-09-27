@@ -62,7 +62,7 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: #101624;
+  background: linear-gradient(135deg, #101624 0%, #0f1419 100%);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
   font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
@@ -71,6 +71,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* Inconsolata Font */
@@ -166,16 +167,26 @@ body {
 
 .cta {
   color: #ffb800;
-  border: 0.5px solid #ffb800;
-  border-radius: 3px;
-  padding: 10px 20px;
+  border: 1px solid #ffb800;
+  border-radius: 8px;
+  padding: 12px 24px;
   background-color: transparent;
-  transition: all 0.4s;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
 }
 .cta:hover {
-  transition: all 0.4s;
-  background-color: #ffb70018;
-  box-shadow: inset 0 0 5px #ffb800, 2px 2px 5px #ffb800;
+  transition: all 0.3s ease;
+  background-color: #ffb800;
+  color: #101624;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 184, 0, 0.3);
+}
+.cta:active {
+  transform: translateY(0);
 }
 
 .lh-n {
@@ -188,6 +199,25 @@ body {
 
 .content-container {
   margin: 300px 100px;
+  position: relative;
+}
+
+.content-container::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  right: -50px;
+  bottom: -50px;
+  background: linear-gradient(135deg, rgba(255, 184, 0, 0.02) 0%, rgba(255, 184, 0, 0.01) 100%);
+  border-radius: 20px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.content-container:hover::before {
+  opacity: 1;
 }
 
 @media screen and (max-width: 600px) {

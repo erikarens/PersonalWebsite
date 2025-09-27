@@ -10,8 +10,8 @@ export default {};
     <a href="https://www.linkedin.com/in/erik-arens-a48865195/" target="_blank" class="sidenav-icons">
       <img src="../assets/images/linkedin.png" alt="LinkedIn Profil Erik Arens" width="40" />
     </a>
-    <a href="https://netzhero.de" target="_blank" class="sidenav-icons">
-      <img src="../assets/images/netzhero.png" alt="Netzhero Logo Erik Arens" width="40" class="netzhero-logo" />
+    <a href="https://x.com/erikarens" target="_blank" class="sidenav-icons">
+      <img src="../assets/images/x.jpg" alt="Twitter/X Profile Erik Arens" width="40" class="x-logo" />
     </a>
   </div>
 </template>
@@ -44,7 +44,7 @@ export default {};
   transform: scale(1.1);
 }
 
-.netzhero-logo {
+.x-logo {
   border-radius: 5px;
 }
 
