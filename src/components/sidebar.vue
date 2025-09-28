@@ -4,14 +4,36 @@ export default {};
 
 <template>
   <div class="sidenav">
-    <a href="https://github.com/erikarens" target="_blank" class="sidenav-icons">
-      <img src="../assets/images/github-sign.png" alt="Github Profil Erik Arens" width="40" class="github" />
+    <a
+      href="https://github.com/erikarens"
+      target="_blank"
+      class="sidenav-icons"
+    >
+      <img
+        src="../assets/images/github-sign.png"
+        alt="Github Profil Erik Arens"
+        width="40"
+        class="github"
+      />
     </a>
-    <a href="https://www.linkedin.com/in/erik-arens-a48865195/" target="_blank" class="sidenav-icons">
-      <img src="../assets/images/linkedin.png" alt="LinkedIn Profil Erik Arens" width="40" />
+    <a
+      href="https://www.linkedin.com/in/erik-arens-a48865195/"
+      target="_blank"
+      class="sidenav-icons"
+    >
+      <img
+        src="../assets/images/linkedin.png"
+        alt="LinkedIn Profil Erik Arens"
+        width="40"
+      />
     </a>
     <a href="https://x.com/erikarens" target="_blank" class="sidenav-icons">
-      <img src="../assets/images/x.jpg" alt="Twitter/X Profile Erik Arens" width="40" class="x-logo" />
+      <img
+        src="../assets/images/x.jpg"
+        alt="Twitter/X Profile Erik Arens"
+        width="40"
+        class="x-logo"
+      />
     </a>
   </div>
 </template>
@@ -55,6 +77,7 @@ export default {};
 }
 
 .github {
-  filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(6deg) brightness(112%) contrast(100%);
+  filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(6deg) brightness(112%)
+    contrast(100%);
 }
 </style>

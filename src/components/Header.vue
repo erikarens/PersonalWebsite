@@ -8,16 +8,29 @@ export default {};
     <h1 class="lh-n normal primary-b f60">Erik Arens</h1>
     <h2 class="lh-n accent primary-b f60">Software Developer & Founder</h2>
     <p class="primary-l accent f20">
-      I build software solutions and run my own businesses. Specialized in .NET, Angular, and React Native. 
-      Passionate about solving real-world problems through technology and entrepreneurship.
+      I build software solutions and run my own businesses. Specialized in .NET,
+      Angular, and React Native. Passionate about solving real-world problems
+      through technology and entrepreneurship.
     </p>
     <div class="cta-container">
-      <a href="https://github.com/erikarens" class="secondary-l accent f20 cta-spacing profile-cta"
-        target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/erik-arens-a48865195/" class="secondary-l accent f20 cta-spacing profile-cta"
-        target="_blank">LinkedIn</a>
-      <a href="https://x.com/erikarens" class="secondary-l accent f20 cta-spacing profile-cta"
-        target="_blank">X / Twitter</a>
+      <a
+        href="https://github.com/erikarens"
+        class="secondary-l accent f20 cta-spacing profile-cta"
+        target="_blank"
+        >GitHub</a
+      >
+      <a
+        href="https://www.linkedin.com/in/erik-arens-a48865195/"
+        class="secondary-l accent f20 cta-spacing profile-cta"
+        target="_blank"
+        >LinkedIn</a
+      >
+      <a
+        href="https://x.com/erikarens"
+        class="secondary-l accent f20 cta-spacing profile-cta"
+        target="_blank"
+        >X / Twitter</a
+      >
     </div>
   </div>
 </template>

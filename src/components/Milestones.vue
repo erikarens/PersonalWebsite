@@ -6,7 +6,8 @@ export default {};
   <div class="milestone-container">
     <div class="section-header">
       <h2 class="secondary-m normal f45 center mobile-text">
-        <span class="heading-dot">.</span>Journey <span class="mobile-line milestone"></span>
+        <span class="heading-dot">.</span>Journey
+        <span class="mobile-line milestone"></span>
       </h2>
       <p class="primary-l accent f20 center mobile-text section-subtitle">
         From software development to entrepreneurship
@@ -24,7 +25,9 @@ export default {};
             <span class="timeline-date">Present</span>
             <span class="timeline-category">Current Focus</span>
           </div>
-          <h3 class="timeline-title">Finding and solving real world problems</h3>
+          <h3 class="timeline-title">
+            Finding and solving real world problems
+          </h3>
           <p class="timeline-description">
             Trying to find and solve real world problems.
           </p>
@@ -48,8 +51,9 @@ export default {};
           </div>
           <h3 class="timeline-title">Lead Software Developer at Werkdigital</h3>
           <p class="timeline-description">
-            Starting a new role as Lead Software Developer at Werkdigital. 
-            I'm excited to continue my journey in software development and to take on more responsibilities.
+            Starting a new role as Lead Software Developer at Werkdigital. I'm
+            excited to continue my journey in software development and to take
+            on more responsibilities.
           </p>
           <div class="timeline-tags">
             <span class="tag">Lead Software Developer</span>
@@ -68,10 +72,13 @@ export default {};
             <span class="timeline-date">March 2025</span>
             <span class="timeline-category">Professional</span>
           </div>
-          <h3 class="timeline-title">AI Innovation Specialist at Werkdigital</h3>
+          <h3 class="timeline-title">
+            AI Innovation Specialist at Werkdigital
+          </h3>
           <p class="timeline-description">
-            Starting a new role as AI Innovation Specialist at Werkdigital. 
-            I'm excited to continue my journey in AI innovation for internal and external use.
+            Starting a new role as AI Innovation Specialist at Werkdigital. I'm
+            excited to continue my journey in AI innovation for internal and
+            external use.
           </p>
           <div class="timeline-tags">
             <span class="tag">AI Innovation Specialist</span>
@@ -92,8 +99,9 @@ export default {};
           </div>
           <h3 class="timeline-title">Software Developer at Werkdigital</h3>
           <p class="timeline-description">
-            Specialized in .NET, Angular, and React Native development. Working on enterprise-level applications 
-            and contributing to scalable software solutions.
+            Specialized in .NET, Angular, and React Native development. Working
+            on enterprise-level applications and contributing to scalable
+            software solutions.
           </p>
           <div class="timeline-tags">
             <span class="tag">.NET</span>
@@ -115,8 +123,9 @@ export default {};
           </div>
           <h3 class="timeline-title">Customer Map Application</h3>
           <p class="timeline-description">
-            Developed a comprehensive field service planning application with advanced filtering capabilities 
-            and customer data management features. This project was developed for a customer of Netzhero.
+            Developed a comprehensive field service planning application with
+            advanced filtering capabilities and customer data management
+            features. This project was developed for a customer of Netzhero.
           </p>
           <div class="timeline-tags">
             <span class="tag">Web Application</span>
@@ -138,8 +147,9 @@ export default {};
           </div>
           <h3 class="timeline-title">Certified Web Developer</h3>
           <p class="timeline-description">
-            Completed advanced training with distinction (Grade: 1.2) and earned the professional qualification 
-            "Geprüfter Web-Entwickler" (Certified Web Developer).
+            Completed advanced training with distinction (Grade: 1.2) and earned
+            the professional qualification "Geprüfter Web-Entwickler" (Certified
+            Web Developer).
           </p>
           <div class="timeline-tags">
             <span class="tag">Certification</span>
@@ -161,8 +171,10 @@ export default {};
           </div>
           <h3 class="timeline-title">Produktfinder Platform</h3>
           <p class="timeline-description">
-            Created an innovative product calculator with white-label functionality, enabling wholesalers 
-            to embed customized solutions on their websites. This project was developed for a customer of Netzhero.
+            Created an innovative product calculator with white-label
+            functionality, enabling wholesalers to embed customized solutions on
+            their websites. This project was developed for a customer of
+            Netzhero.
           </p>
           <div class="timeline-tags">
             <span class="tag">SaaS Platform</span>
@@ -184,8 +196,9 @@ export default {};
           </div>
           <h3 class="timeline-title">Founded Netzhero</h3>
           <p class="timeline-description">
-            Launched Netzhero as a side venture to pursue my passion for software development and 
-            explore entrepreneurial opportunities in the tech space.
+            Launched Netzhero as a side venture to pursue my passion for
+            software development and explore entrepreneurial opportunities in
+            the tech space.
           </p>
           <div class="timeline-tags">
             <span class="tag">Founder</span>
@@ -225,7 +238,7 @@ export default {};
 }
 
 .modern-timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50px;
   top: 0;
