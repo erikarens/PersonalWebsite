@@ -1,53 +1,13 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
+  --bg: #0f0e0d;
+  --bg-soft: #161513;
+  --text: #e8e4dc;
+  --muted: #7a756d;
+  --hairline: #22201d;
+  --accent: #c89968;
 
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
-
-  --vt-c-indigo: #2c3e50;
-
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
-
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-}
-
-/* semantic color variables for this project */
-:root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
-
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
-
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
-
-  --section-gap: 160px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
+  --font-display: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: secondary-l, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 *,
@@ -55,217 +15,113 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  position: relative;
-  font-weight: normal;
+  padding: 0;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "ss01", "cv11";
+  overflow-x: hidden;
 }
 
 body {
   min-height: 100vh;
-  color: var(--color-text);
-  background: linear-gradient(135deg, #101624 0%, #0f1419 100%);
-  transition: color 0.5s, background-color 0.5s;
-  line-height: 1.6;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: 15px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(200, 153, 104, 0.05), transparent 60%),
+    radial-gradient(800px 400px at -10% 110%, rgba(200, 153, 104, 0.03), transparent 60%),
+    var(--bg);
 }
 
-/* Inconsolata Font */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* Inconsolata — mono for labels / links */
 @font-face {
   font-family: secondary-el;
   src: url(../assets/fonts/Inconsolata/Inconsolata-ExtraLight.ttf);
-}
-.secondary-el {
-  font-family: secondary-el;
+  font-display: swap;
 }
 @font-face {
   font-family: secondary-l;
   src: url(../assets/fonts/Inconsolata/Inconsolata-Light.ttf);
-}
-.secondary-l {
-  font-family: secondary-l;
+  font-display: swap;
 }
 @font-face {
   font-family: secondary-m;
   src: url(../assets/fonts/Inconsolata/Inconsolata-Medium.ttf);
-}
-.secondary-m {
-  font-family: secondary-m;
+  font-display: swap;
 }
 @font-face {
   font-family: secondary-b;
   src: url(../assets/fonts/Inconsolata/Inconsolata-Bold.ttf);
-}
-.secondary-b {
-  font-family: secondary-b;
+  font-display: swap;
 }
 
-/* Roboto Font */
-@font-face {
-  font-family: primary-l;
-  src: url(../assets/fonts/Roboto/Roboto-Light.ttf);
-}
-.primary-l {
-  font-family: primary-l;
-}
-@font-face {
-  font-family: primary-r;
-  src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
-}
-.primary-r {
-  font-family: primary-r;
-}
-@font-face {
-  font-family: primary-b;
-  src: url(../assets/fonts/Roboto/Roboto-Bold.ttf);
-}
-.primary-b {
-  font-family: primary-b;
+.mono {
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
 }
 
-/* Globale Styling */
-.primary {
-  color: #ffb800;
-}
-
-.normal {
-  color: #ffffff;
+.muted {
+  color: var(--muted);
 }
 
 .accent {
-  color: #c6c8cd;
+  color: var(--accent);
 }
 
-.heading-dot {
-  color: #ffb800;
-  font-family: secondary-b;
-  font-size: 30px;
+.hairline {
+  height: 1px;
+  background: var(--hairline);
+  border: 0;
 }
 
-.f15 {
-  font-size: 15px;
-}
-.f20 {
-  font-size: 20px;
-}
-.f30 {
-  font-size: 30px;
-}
-.f40 {
-  font-size: 40px;
-}
-.f45 {
-  font-size: 45px;
-}
-.f60 {
-  font-size: 60px;
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.cta {
-  color: #ffb800;
-  border: 1px solid #ffb800;
-  border-radius: 8px;
-  padding: 12px 24px;
-  background-color: transparent;
-  transition: all 0.3s ease;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-}
-.cta:hover {
-  transition: all 0.3s ease;
-  background-color: #ffb800;
-  color: #101624;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 184, 0, 0.3);
-}
-.cta:active {
-  transform: translateY(0);
-}
-
-.lh-n {
-  line-height: normal;
-}
-
-.center {
-  text-align: center;
-}
-
-.content-container {
-  margin: 300px 100px;
-  position: relative;
-}
-
-.content-container::before {
-  content: '';
-  position: absolute;
-  top: -50px;
-  left: -50px;
-  right: -50px;
-  bottom: -50px;
-  background: linear-gradient(135deg, rgba(255, 184, 0, 0.02) 0%, rgba(255, 184, 0, 0.01) 100%);
-  border-radius: 20px;
-  z-index: -1;
+.fade-up {
+  animation: fadeUp 0.9s ease forwards;
   opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
-.content-container:hover::before {
-  opacity: 1;
-}
+.fade-up.d1 { animation-delay: 0.05s; }
+.fade-up.d2 { animation-delay: 0.20s; }
+.fade-up.d3 { animation-delay: 0.40s; }
+.fade-up.d4 { animation-delay: 0.60s; }
+.fade-up.d5 { animation-delay: 0.85s; }
+.fade-up.d6 { animation-delay: 1.10s; }
 
-@media screen and (max-width: 600px) {
-  .f15 {
-    font-size: 15px;
-  }
-  .f20 {
-    font-size: 18px;
-    line-height: 140%;
-  }
-  .f30 {
-    font-size: 22px;
-  }
-  .f40 {
-    font-size: 28px;
-  }
-  .f45 {
-    font-size: 33px;
-  }
-  .f60 {
-    font-size: 30px;
-    line-height: 140%;
-  }
-
-  .mobile-text {
-    text-align: left;
-  }
-
-  .content-container {
-    margin: auto;
-    width: 100%;
-    padding: 5px;
-  }
-
-  .cta {
-    padding: 10px 20px;
-    margin: auto;
-  }
-
-  .mobile-line {
-    display: inline-block;
-    width: 150px; /*or whatever width you want the effect of <hr>*/
-    border-top: 2px solid #1b2741;
-    border-radius: 1px;
-    padding-bottom: 8px;
-  }
-
-  .mobile-line.milestone {
-    width: 75px;
+@media (prefers-reduced-motion: reduce) {
+  .fade-up {
+    animation: none;
+    opacity: 1;
   }
 }
