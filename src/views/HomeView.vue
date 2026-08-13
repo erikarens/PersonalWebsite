@@ -7,9 +7,21 @@ import { RouterLink } from "vue-router";
     <header class="top">
       <span class="mark mono fade-up d1">arens.</span>
       <nav class="topnav mono fade-up d1">
-        <a href="https://www.youtube.com/@arenserik" target="_blank" rel="noopener">yt</a>
-        <a href="https://www.linkedin.com/in/erik-arens-a48865195/" target="_blank" rel="noopener">in</a>
-        <a href="https://github.com/erikarens" target="_blank" rel="noopener">gh</a>
+        <a
+          href="https://www.youtube.com/@erikarensverified"
+          target="_blank"
+          rel="noopener"
+          >yt</a
+        >
+        <a
+          href="https://www.linkedin.com/in/erik-arens-a48865195/"
+          target="_blank"
+          rel="noopener"
+          >in</a
+        >
+        <a href="https://github.com/erikarens" target="_blank" rel="noopener"
+          >gh</a
+        >
         <a href="https://x.com/erikarens" target="_blank" rel="noopener">x</a>
       </nav>
     </header>
@@ -31,13 +43,21 @@ import { RouterLink } from "vue-router";
       </p>
 
       <div class="links mono fade-up d6">
-        <a href="https://www.youtube.com/@arenserik" target="_blank" rel="noopener">
+        <a
+          href="https://www.youtube.com/@erikarensverified"
+          target="_blank"
+          rel="noopener"
+        >
           <span class="link-dot">·</span> youtube
         </a>
-        <a href="https://www.linkedin.com/in/erik-arens-a48865195/" target="_blank" rel="noopener">
+        <a
+          href="https://www.linkedin.com/in/erik-arens-a48865195/"
+          target="_blank"
+          rel="noopener"
+        >
           <span class="link-dot">·</span> linkedin
         </a>
-        <a href="mailto:erikarens@netzhero.de">
+        <a href="mailto:erik.arens@netzhero.de">
           <span class="link-dot">·</span> kontakt
         </a>
       </div>
@@ -47,6 +67,8 @@ import { RouterLink } from "vue-router";
       <span>© Erik Arens</span>
       <span class="sep">·</span>
       <RouterLink to="/impressum">impressum</RouterLink>
+      <span class="sep">·</span>
+      <RouterLink to="/datenschutz">datenschutz</RouterLink>
       <span class="sep">·</span>
       <RouterLink to="/agb">agb</RouterLink>
     </footer>

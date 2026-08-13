@@ -26,6 +26,8 @@ defineProps<{
       <span class="sep">·</span>
       <RouterLink to="/impressum">impressum</RouterLink>
       <span class="sep">·</span>
+      <RouterLink to="/datenschutz">datenschutz</RouterLink>
+      <span class="sep">·</span>
       <RouterLink to="/agb">agb</RouterLink>
     </footer>
   </main>

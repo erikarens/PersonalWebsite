@@ -18,5 +18,5 @@
 <h2>Author</h2>
 
 [Profile](https://github.com/erikarens "Erik Arens GitHub") <br>
-[Email](mailto:erikarens@netzhero.de "Say hello!") <br>
+[Email](mailto:erik.arens@netzhero.de "Say hello!") <br>
 [Website](https://erikarens.de "Personal Website") <br>

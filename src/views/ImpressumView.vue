@@ -3,12 +3,12 @@ import LegalLayout from "@/components/LegalLayout.vue";
 </script>
 
 <template>
-  <LegalLayout title="Impressum" eyebrow="Angaben gemäß § 5 TMG">
+  <LegalLayout title="Impressum" eyebrow="Angaben gemäß § 5 DDG">
     <section class="block">
       <h2>Anbieter</h2>
       <p>
         Erik Arens<br />
-        Inhaber: Erik Arens<br />
+        handelnd unter der Geschäftsbezeichnung „Netzhero“<br />
         Friedrich-Karl-Straße 103<br />
         50735 Köln<br />
         Deutschland
@@ -18,18 +18,21 @@ import LegalLayout from "@/components/LegalLayout.vue";
     <section class="block">
       <h2>Kontakt</h2>
       <p>
-        E-Mail: <a href="mailto:erikarens@netzhero.de">erik.arens@netzhero.de</a>
+        E-Mail:
+        <a href="mailto:erik.arens@netzhero.de">erik.arens@netzhero.de</a>
       </p>
     </section>
 
-    <!-- TODO: Neue USt-IdNr. vom Finanzamt eintragen, sobald erteilt (§5 Abs. 1 Nr. 6 TMG). Alte DE327223984 ist inaktiv. -->
-    <!-- <section class="block">
+    <section class="block">
       <h2>Umsatzsteuer-Identifikationsnummer</h2>
-      <p>DE...</p>
-    </section> -->
+      <p>
+        Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:<br />
+        DE327223984
+      </p>
+    </section>
 
     <section class="block">
-      <h2>Verantwortlich gemäß § 55 Abs. 2 RStV</h2>
+      <h2>Verantwortlich gemäß § 18 Abs. 2 MStV</h2>
       <p>
         Erik Arens<br />
         Friedrich-Karl-Straße 103<br />
@@ -40,14 +43,9 @@ import LegalLayout from "@/components/LegalLayout.vue";
     <section class="block">
       <h2>Streitschlichtung</h2>
       <p>
-        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
-        <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a>.
-      </p>
-      <p>
-        Wir sind bereit, an einem außergerichtlichen Schlichtungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
-        Zuständig ist die Allgemeine Verbraucherschlichtungsstelle des Zentrums für Schlichtung e.V.,
-        Straßburger Straße 8, 77694 Kehl am Rhein,
-        <a href="https://www.verbraucher-schlichter.de" target="_blank" rel="noopener">www.verbraucher-schlichter.de</a>.
+        Wir sind nicht verpflichtet und nicht bereit, an
+        Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
+        teilzunehmen (§ 36 Abs. 1 Nr. 1 VSBG).
       </p>
     </section>
   </LegalLayout>

@@ -23,6 +23,12 @@ const router = createRouter({
       meta: { title: "Impressum — Erik Arens" },
     },
     {
+      path: "/datenschutz",
+      name: "datenschutz",
+      component: () => import("../views/DatenschutzView.vue"),
+      meta: { title: "Datenschutz — Erik Arens" },
+    },
+    {
       path: "/:pathMatch(.*)*",
       redirect: "/",
     },
