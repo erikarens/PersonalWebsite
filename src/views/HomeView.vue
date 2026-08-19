@@ -14,7 +14,7 @@ import { RouterLink } from "vue-router";
           >yt</a
         >
         <a
-          href="https://www.linkedin.com/in/erik-arens-a48865195/"
+          href="https://www.linkedin.com/in/erikarens/"
           target="_blank"
           rel="noopener"
           >in</a
@@ -27,19 +27,48 @@ import { RouterLink } from "vue-router";
     </header>
 
     <section class="hero">
-      <p class="eyebrow mono muted fade-up d2">Köln</p>
+      <p class="eyebrow mono muted fade-up d2">Erik Arens · Köln · Talk</p>
 
-      <h1 class="name fade-up d3">Erik Arens</h1>
+      <h1 class="title fade-up d3">
+        You Can&rsquo;t Hotfix<br />
+        a Drilling Rig
+      </h1>
 
       <p class="role fade-up d4">
-        Lead Dev. Gründer.<br />
-        <span class="accent">AI Innovation Specialist.</span>
+        What Machine Building Taught Me<br />
+        <span class="accent">About Shipping AI.</span>
       </p>
 
+      <div class="abstract fade-up d5">
+        <p>
+          Before I built AI systems, I spent eight years assembling drive units
+          for horizontal drilling rigs. The rig stays on the surface; the drill
+          head goes under the road, and once it is in the ground nobody can
+          reach it &mdash; so everything has to be right before it goes in.
+          <span class="muted">Hydraulics don&rsquo;t have an MVP.</span>
+        </p>
+
+        <p>
+          Then I moved into software, and now AI, where an industry has
+          convinced itself that a working demo is a working product.
+        </p>
+
+        <p>
+          In this talk I take the engineering standards of machine building
+          &mdash; tolerances, failure modes, designed-in maintenance paths
+          &mdash; and apply them to AI systems: what to specify before you
+          build, how to know whether the thing actually works, and why
+          <span class="accent">&ldquo;robust&rdquo; is a spec rather than a phase</span>.
+          Drawn from building AI agents for production clients and from shipping
+          a compliance-critical SaaS product where being wrong isn&rsquo;t a bug,
+          it&rsquo;s a tax problem.
+        </p>
+      </div>
+
       <p class="thesis fade-up d5">
-        98 % der deutschen Unternehmen<br />
-        nutzen KI noch nicht produktiv.<br />
-        <span class="muted">Ich helfe das zu ändern.</span>
+        For founders and engineering leaders<br />
+        who need AI in production,<br />
+        <span class="muted">not in a slide.</span>
       </p>
 
       <div class="links mono fade-up d6">
@@ -51,7 +80,7 @@ import { RouterLink } from "vue-router";
           <span class="link-dot">·</span> youtube
         </a>
         <a
-          href="https://www.linkedin.com/in/erik-arens-a48865195/"
+          href="https://www.linkedin.com/in/erikarens/"
           target="_blank"
           rel="noopener"
         >
@@ -118,15 +147,15 @@ import { RouterLink } from "vue-router";
 .eyebrow {
   font-size: 13px;
   letter-spacing: 0.18em;
-  text-transform: lowercase;
 }
 
-.name {
-  font-size: clamp(56px, 11vw, 132px);
+.title {
+  font-size: clamp(40px, 7.5vw, 96px);
   font-weight: 700;
-  line-height: 0.95;
+  line-height: 0.98;
   letter-spacing: -0.04em;
   color: var(--text);
+  max-width: 16ch;
 }
 
 .role {
@@ -134,7 +163,17 @@ import { RouterLink } from "vue-router";
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: -0.01em;
-  max-width: 22ch;
+  max-width: 32ch;
+}
+
+.abstract {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: clamp(15px, 1.5vw, 18px);
+  line-height: 1.6;
+  max-width: 62ch;
+  margin-top: 4px;
 }
 
 .thesis {
